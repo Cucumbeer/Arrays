@@ -37,6 +37,18 @@ void main()
 	}
 	cout << "Сумма элементов массива: " << sum << endl;
 	cout << "Среднее арифметическое: " << (double)sum / SIZE << endl;
-
-	//Поиск минимального и максимального значения в массиве: 
+	
+	//Минимальное и максимальное значение массива:
+	int max = arr[0];
+	int min = arr[0];
+	
+	for (int i = 1; i < SIZE; i++)
+	{
+		if (arr[i] < min)
+			min = arr[i];
+		if (arr[i] > max)
+			max = arr[i];
+	}
+	cout << "Max = " << max << "\n\n";
+	cout << "Min = " << min << "\n\n";
 }
